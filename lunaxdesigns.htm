@@ -1,25 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="navbar.css" type="text/css">
 </head>
+<style type="text/css">
+    #brand {
+        text-align: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: navy;
+        font-size: 60px;
+    }
+
+    body {
+        background-color: #F2D5DF;
+    }
+
+
+    .welcome {
+        text-align: center;
+        padding-left: 200px;
+        padding-right: 200px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 18px;
+        color: navy;
+    }
+
+    .collab {
+        text-align: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: navy;
+        padding-left: 50px;
+        font-size: 50px;
+
+    }
+
+    .first {
+        margin-left: auto;
+        margin-right: auto;
+    }
+</style>
+<script type="text/javascript">
+//slideshow//
+ const slides = [
+        "ProjectImages/rolling1.JPG",
+        "ProjectImages/IMG_3463.jpg",
+        "ProjectImages/IMG_3463.jpg",
+        "ProjectImages/luna1.JPG"
+      ];
+      
+      const descriptionList = [
+        "ROLLING STONES",
+        "AMORE",
+        "RICKXMORTY",
+        "STAR PANTS"
+      ];
+      let i = 0;
+      function slideShow() {
+        let rolling = document.getElementById("stones");
+        if (i == slides.length) {
+          i = 0;
+        }
+        rolling.src = slides[i];
+        document.getElementById("description").innerHTML = descriptionList[i];
+        i++;
+        setTimeout("slideShow()", 1500);
+      }
+</script>
+
 <body>
     <div class="nav-bar">
         <ul class="icons">
-                <li><a href="index.htm">WORK</a></li>
-                <li><a href="lunaxdesigns.htm">LUNAXDESIGNS</a></li>
-                <li><a href="branding.htm">BRANDING</a></li>
-                <li><a href="art.htm">ART</a></li>
-                <li><a href="photojournal.htm">PHOTO JOURNAL</a></li>
-                <li><a href="allthingsluna.htm">ALL THINGS LUNA</a></li>
-                <li><a href="contact.htm">CONTACT</a></li>
-                <li><a href="resume.htm">RESUME</a></li>
-                <li><a href="sitemap.htm">SITEMAP</a></li>
-                
+            <li> <img src="ProjectImages/LU   NA.PNG" alt="logo" title="logo" height="100"></li>
+            <li><a href="index.htm">WORK</a></li>
+            <li><a href="lunaxdesigns.htm">LUNAXDESIGNS</a></li>
+            <li><a href="branding.htm">BRANDING</a></li>
+            <li><a href="art.htm">ART</a></li>
+            <li><a href="allthingsluna.htm">ALL THINGS LUNA</a></li>
+            <li><a href="contact.htm">CONTACT</a></li>
+            <li><a href="sitemap.htm">SITEMAP</a></li>
+            <li><a href="credits.htm">CREDITS</a></li>
+
         </ul>
     </div>
-</body>
+    <h1 id="brand">LUNA X DESIGNS</h1>
+    <p class="welcome">Welcome to my passion project, LUNA x DESIGNS! Ever since I was in high school, I loved going to
+        thrifting to find vintage gems.
+        On weekends, my friends and I would always head over to Garment District's "pay-per pound" where clothes were
+        sometimes only a dollar a pound!
+        Finding a good piece was like looking for a needle in a haystack, but once you found the needle, it felt like
+        hitting the jackpot.</p>
+    <br>
+    <p class="welcome">Like every normal human being, I eventually got tired of certain styles, and resorted to either
+        re-selling my clothes or donating them.
+        One night, I was listening to the Rolling Stones, and thought to myself "I wish I owned a Rolling Stones
+        shirt!". And then I said, "why can't I just make one myself?".
+        I grabbed a few acrylic paints, an old denim jacket, and got to work. Next thing I knew, LUNA x DESIGNS was
+        born.</p>
+    <br>
+    <p class="welcome">My hobby of re-purposing clothes eventually led me towards a greater purpose that I want to
+        pursue in my life. I hope to find a career where I am integrating sustainable practices into
+        supply chains or products lines. LUNA x DESIGNS is just the start of this journey, and I am excited to see where
+        I end up next.</p>
+    <table class="first">
+        <tr>
+            <td>
+                <img src="ProjectImages/leather1.jpg" alt="leather1" title="rainbow jacket" height="300">
+                <img src="ProjectImages/leather2.jpg" alt="leather2" title="rainbow jacket" height="300">
+                <img src="ProjectImages/leather1.jpg" alt="leather1" title="rainbow jacket" height="300">
+            </td>
+        </tr>
+    </table>
+
+    <p class="collab">LUNA x RAINBOW</p>
+    <table class="first">
+        <tr>
+            <td>
+                <img src="ProjectImages/luna1.JPG" alt="star pants" title="star pants" height="300">
+                <img src="ProjectImages/luna2.JPG" alt="star pants" title="star pants" height="300">
+                <img src="ProjectImages/luna3.JPG" alt="star pants" title="star pants" height="300">
+        </tr>
+        </td>
+    </table>
+
+    <p class="collab">LUNA x STARS</p>
+    <table class="first">
+        <tr>
+            <td>
+                <img src="ProjectImages/IMG_3463.jpg" alt="rickxmorty" title="rickxmorty" height="300">
+                <img src="ProjectImages/IMG_3416.JPG" alt="rickxmorty" title="rickxmorty" height="300">
+                <img src="ProjectImages/IMG_3464.jpg" alt="rickxmorty" title="rickxmorty" height="300">
+            </td>
+        </tr>
+    </table>
+    <p class="collab">LUNA x RICK AND MORTY</p>
+    <table class="first">
+        <tr>
+            <td>
+                <img src="ProjectImages/rolling1.JPG" alt="rollingstones" title="rollingstones" height="300">
+                <img src="ProjectImages/rolling2.jpg" alt="rollingstones" title="rollingstones" height="300">
+                <img src="ProjectImages/rolling3.jpg" alt="rollingstones" title="rollingstones" height="300">
+            </td>
+        </tr>
+    </table>
+    <p class="collab">LUNA x ROLLING STONES</p>
+    <table class="first">
+        <tr>
+            <td>
+                <img src="ProjectImages/IMG_3463.jpg" alt="amore skirt" title="amore skirt" height="300">
+                <img src="ProjectImages/IMG_3416.JPG" alt="amore skirt" title="amore skirt" height="300">
+                <img src="ProjectImages/IMG_3464.jpg" alt="amore skirt" title="amore skirt" height="300">
+            </td>
+        </tr>
+    </table>
+
+    <body onload="slideShow()">
+        <p>
+            <img src="ProjectImages/rolling1.JPG" alt="Slide Show work" title="rollingstones" id="stones" />
+        </p>
+        <p id="description"></p>
+
+    </body>
+
 </html>

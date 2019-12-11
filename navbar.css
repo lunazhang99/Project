@@ -1,0 +1,27 @@
+ul {
+ list-style-type: none;
+width: 150px;
+  position: fixed;
+  z-index: 1;
+  top: 20px;
+  left: 15px;
+  background:#F2D5DF;
+  overflow-x: hidden;
+  padding: 10px 0;
+   
+  }
+  li a {
+  
+    display: block;
+    width: 60px;
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: navy;
+    padding: 5px 10px;
+
+  }
+  li a:hover {
+    background-color:white;
+    color: skyblue;
+    width: 100%;
+  }

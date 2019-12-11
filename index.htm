@@ -3,34 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content='This is the portfolio of Luna Zhang, a junior at Babson College pursuing a business degree.  
+    This portfolio showcases her passion for fashion and the arts.' />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home Page</title>
+    <link rel="stylesheet" href="navbar.css" type="text/css">
 </head>
+<style type="text/css">
+#home{
+    margin-left:auto; 
+    margin-right:auto;
+}
+#luna{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:navy;
+    font-size: 60px;
+    
+}
+body{
+    background-color:#F2D5DF;
+}
+#vid{
+    display: block;
+    margin: 0 auto;
+}
+h2{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+</style>
 <body>
-    <h1>LUNA ZHANG</h1>
+    <h1 id="luna">LUNA ZHANG</h1>
     <br>
-    <img src="ProjectImages/branding.jpg" alt="branding page"title="BRANDING" height="200">
-    <img src="ProjectImages/Art.jpg" alt="Art page"title="Art" height="200">
-    <img src="ProjectImages/PhotoJournal.jpg" alt="Photo"title="PHOTOJOURNAL" height="200">
-    <img src="ProjectImages/lunaxdesigns.jpg" alt="LunaxDesigns page"title="LUNAXDESIGNS" height="200">
+    <table id="home">
+    <tr>
+    <td><a href="branding.htm"></a><img src="ProjectImages/branding.jpg"  alt="branding page"title="BRANDING" height="300"></td>
+    <td><a href="art.htm"></a><img src="ProjectImages/Art.jpg" alt="Art page"title="Art" height="300"></td>
+    </tr>
+    <tr>
+    <td><a href="allthingsluna.htm"></a><img src="ProjectImages/PhotoJournal.jpg" alt="Photo"title="PHOTOJOURNAL" height="300"></td>
+   <td><a href= "lunaxdesigns.htm"></a><img src="ProjectImages/lunaxdesigns.jpg" alt="LunaxDesigns page"title="LUNAXDESIGNS" height="300"></td>
+    </tr>
+</table>
         
     <div class="nav-bar">
         <ul class="icons">
+                <li> <img src="ProjectImages/LU   NA.PNG" alt="logo" title="logo" height="100"></li>
                 <li><a href="index.htm">WORK</a></li>
                 <li><a href="lunaxdesigns.htm">LUNAXDESIGNS</a></li>
                 <li><a href="branding.htm">BRANDING</a></li>
                 <li><a href="art.htm">ART</a></li>
-                <li><a href="photojournal.htm">PHOTO JOURNAL</a></li>
                 <li><a href="allthingsluna.htm">ALL THINGS LUNA</a></li>
                 <li><a href="contact.htm">CONTACT</a></li>
-                <li><a href="resume.htm">RESUME</a></li>
                 <li><a href="sitemap.htm">SITEMAP</a></li>
+                <li><a href="credits.htm">CREDITS</a></li>
                 
         </ul>
     </div>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/_WbEIBqZF5o"
+    <div>
+    <iframe id="vid" width="560" height="315" src="https://www.youtube.com/embed/_WbEIBqZF5o"
      frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
      allowfullscreen></iframe>
+    </div>
+    <h2> Check out this video of my school's fashion show featuring some of my pieces!</h2>
      <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" 
      src="https://w.soundcloud.com/player/?url=https%3A//
      api.soundcloud.com/tracks/689814901&color=%23ff5500&auto_

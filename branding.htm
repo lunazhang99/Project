@@ -1,58 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="navbar.css" type="text/css">
+    <style type="text/css">
+        .brand {
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: navy;
+            font-size: 60px;
+        }
+
+        body {
+            background-color: #F2D5DF;
+        }
+
+        .first {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .welcome {
+            text-align: center;
+            padding-left: 200px;
+            padding-right: 200px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 18px;
+            color: navy;
+        }
+        #collab{
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: navy;
+            padding-left: 50px;
+            font-size: 50px;
+
+        }
+    
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript">
+//onmouseout feature//
+    function enlarge(imageID) {
+      console.log(imageID);
+      let i = document.getElementById(imageID);
+      let w = i.width;
+      w = w * 1.5;
+      i.style.width = w + "px";
+      
+    }
+    function reduce(imageID) {
+      let i = document.getElementById(imageID);
+      let w = i.width;
+      w = w / 1.5;
+      i.style.width = w + "px";
+    }
+    //jquery element//
+    $(document).ready(function(){
+  $("button").click(function(){
+    $(this).hide();
+  });
+});
+  </script>
+      
 </head>
+
 <body>
     <div class="nav-bar">
         <ul class="icons">
-                <li><a href="index.htm">WORK</a></li>
-                <li><a href="lunaxdesigns.htm">LUNAXDESIGNS</a></li>
-                <li><a href="branding.htm">BRANDING</a></li>
-                <li><a href="art.htm">ART</a></li>
-                <li><a href="photojournal.htm">PHOTO JOURNAL</a></li>
-                <li><a href="allthingsluna.htm">ALL THINGS LUNA</a></li>
-                <li><a href="contact.htm">CONTACT</a></li>
-                <li><a href="resume.htm">RESUME</a></li>
-                <li><a href="sitemap.htm">SITEMAP</a></li>
-                
+            <li> <img src="ProjectImages/LU   NA.PNG" alt="logo" title="logo" height="100"></li>
+            <li><a href="index.htm">WORK</a></li>
+            <li><a href="lunaxdesigns.htm">LUNAXDESIGNS</a></li>
+            <li><a href="branding.htm">BRANDING</a></li>
+            <li><a href="art.htm">ART</a></li>
+            <li><a href="allthingsluna.htm">ALL THINGS LUNA</a></li>
+            <li><a href="contact.htm">CONTACT</a></li>
+            <li><a href="sitemap.htm">SITEMAP</a></li>
+            <li><a href="credits.htm">CREDITS</a></li>
+
         </ul>
     </div>
-<h1>BRANDING</h1>
-<p>Welcome to my branding page! This page consists of logos and social media pages that I run. </p>
-<img src="ProjectImages/LUNALOGO.png" alt="LUNA LOGO" text="Luna Logo" height="400">
-<img src="ProjectImages/Divinity.jpg" alt="Divinity" text="Divinity" height="400">
-<img src="ProjectImages/Lunamoon.png" alt="LUNA Moon" text="Luna Moon" height="400">
-<p>Pictured above are two personal logos and a logo that was made for a marketing project which is featured in the accomplishments page. 
-    I have experience in Illustrator and Indesign, and am currently learning HTML, CSS, and Javascript formatting languages.  
-    I am spending the summer refining my skills and finding my voice through graphic design. 
-     In the future, I hope to take on projects that allow me to use graphic design to convey authentic 
-     stories to the world.</p>
-     <img src="ProjectImages/Tbaar.jpg" alt="TBaar" text="Tbaar" height="400">
-     <img src="ProjectImages/brunchy.jpg" alt="Brunchy" text="brunch" height="400">
-     <img src="ProjectImages/icecream.jpg" alt="Ice Cream" text="Ice Cream" height="400"> 
-    
-     <h1>@FOOODIESADVENTURES</h1>
-     <p>
-            I have always been an avid foodie and started a "foodstagram" in high school.  
-            At first, my followers just consisted of friends and family,
-             but I started to use relevant hashtags to attract a bigger audience.  
-             Three years later, my foodsta is run by myself in Boston, 
-             and by my friend Claire in New York. We have a much larger following 
-             and we have helped multiple restaurants in the Boston and New York area promote their foods.
-     </p>
-     <img src="ProjectImages/ig1.png" alt="Instashot1" text="Instafeed" height="400">
-     <img src="ProjectImages/ig2.png" alt="Instashot2" text="Instaaccount" height="400">
-     <p>Our photos are often re-posted by other foodies which is featured under 
-         the #fooodiesadventures hashtag.</p>
-    <h1>Brands we have collaborated with</h1>
-    <img src="ProjectImages/sweetmoment.jpg" alt="sweetmoment" text="sweetmoment" height="400">
-    <img src="ProjectImages/thunderbun.jpg" alt="thunderbun" text="thunderbun" height="400">
-    <img src="ProjectImages/bgood.jpg" alt="bgood" text="bgood" height="400"> 
-    <img src="ProjectImages/spoon.png" alt="spoonu" text="spoonu" height="400">
+    <h1 class="brand">BRANDING</h1>
+    <p class="welcome">Welcome to my branding page! This page consists of logos and social media pages that I run. </p>
+    <table class="first">
+        <tr>
+            <td>
+                <img id="logo" src="ProjectImages/LUNALOGO.png" onmouseout="reduce(this.id) " onmouseover="enlarge(this.id) " alt="LUNA LOGO" text="Luna Logo" height="300">
+            </td>
+            <td>
+                <img id="divinity" src="ProjectImages/Divinity.jpg" onmouseout="reduce(this.id) " onmouseover="enlarge(this.id)" alt="Divinity" text="Divinity" height="300">
+            </td>
+            <td>
+                <img id="moon" src="ProjectImages/Lunamoon.png"  onmouseout="reduce(this.id) " onmouseover="enlarge(this.id) " alt="LUNA Moon" text="Luna Moon" height="300">
+            </td>
+        </tr>
+    </table>
+    <p class="welcome">Pictured above are two personal logos and a logo that was made for a marketing project which is
+        featured in the accomplishments page.
+        I have experience in Illustrator and Indesign, and am currently learning HTML, CSS, and Javascript formatting
+        languages.
+        I am spending the summer refining my skills and finding my voice through graphic design.
+        In the future, I hope to take on projects that allow me to use graphic design to convey authentic
+        stories to the world.</p>
+    <table class="first">
+        <tr>
+            <td>
+                <img src="ProjectImages/Tbaar.jpg" alt="TBaar" text="Tbaar" height="300">
+            </td>
+            <td>
+                <img src="ProjectImages/brunchy.jpg" alt="Brunchy" text="brunch" height="300">
+            </td>
+            <td>
+                <img src="ProjectImages/icecream.jpg" alt="Ice Cream" text="Ice Cream" height="300">
+            </td>
+        </tr>
+    </table>
 
+    <h1 class="brand">@FOOODIESADVENTURES</h1>
+    <p class="welcome">
+        I have always been an avid foodie and started a "foodstagram" in high school.
+        At first, my followers just consisted of friends and family,
+        but I started to use relevant hashtags to attract a bigger audience.
+        Three years later, my foodsta is run by myself in Boston,
+        and by my friend Claire in New York. We have a much larger following
+        and we have helped multiple restaurants in the Boston and New York area promote their foods.
+    </p>
+    <table class ="first">
+    <tr>
+     <td>
+    <img src="ProjectImages/ig1.png" alt="Instashot1" text="Instafeed" height="300">
+    <img src="ProjectImages/ig2.png" alt="Instashot2" text="Instaaccount" height="300">
+    </td>
+    </tr>
+</table>
+    <p class="welcome">Our photos are often re-posted by other foodies which is featured under
+        the #fooodiesadventures hashtag.</p>
+    <h1 id= "collab">Brands we have collaborated with</h1>
+    <table class="first">
+        <tr>
+            <td>
+                <img src="ProjectImages/sweetmoment.jpg" alt="sweetmoment" text="sweetmoment" height="300">
+            </td>
+            <td>
+                <img src="ProjectImages/thunderbun.jpg" alt="thunderbun" text="thunderbun" height="300">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="ProjectImages/bgood.jpg" alt="bgood" text="bgood" height="200">
+            </td>
+            <td>
+                <img src="ProjectImages/spoon.png" alt="spoonu" text="spoonu" height="200">
+            </td>
+        </tr>
+    </table>
+    <button>See what happens if you press me!</button>
 </body>
+
 </html>

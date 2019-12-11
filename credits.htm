@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Credits</title>
+    <link rel="stylesheet" href="navbar.css" type="text/css">
+    <style type="text/css">
+      h1 {
+        text-align: center;
+      }
+      h2#msg {
+        position: absolute;
+        color: Navy;
+        font-family: Arial;
+        width: auto;
+      }
+      div {
+        border: 1px solid black;
+        height: 50px;
+        margin-left: 300px;
+        margin-right: 300px;
+        background-color: Yellow;
+      }
+      .welcome {
+            text-align: center;
+            padding-left: 200px;
+            padding-right: 200px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 18px;
+            color: navy;
+      }
+      body{
+    background-color:#F2D5DF;
+}
+    </style>
+
+    <script type="text/javascript">
+    //Animate feature//
+      let p = 320;
+      let i = 0;
+      const msgList = [
+        "Credits Credits Credits"
+      ];
+      function doScroll() {
+        let x = document.getElementById("msg");
+        x.innerHTML = msgList[i];
+        x.style.left = p + "px";
+        if (p > 700) {
+          p = 320;
+          i++;
+          if (i == msgList.length) {
+            i = 0;
+          }
+        } else {
+          p = p + 1;
+        }
+        setTimeout("doScroll()", 8);
+      }
+    </script>
+  </head>
+  
+  <body onload="doScroll()">
+    <h1>Credits</h1>
+    <div class="nav-bar">
+            <ul class="icons">
+                <li> <img src="ProjectImages/LU   NA.PNG" alt="logo" title="logo" height="100"></li>
+                <li><a href="index.htm">WORK</a></li>
+                <li><a href="lunaxdesigns.htm">LUNAXDESIGNS</a></li>
+                <li><a href="branding.htm">BRANDING</a></li>
+                <li><a href="art.htm">ART</a></li>
+                <li><a href="allthingsluna.htm">ALL THINGS LUNA</a></li>
+                <li><a href="contact.htm">CONTACT</a></li>
+                <li><a href="sitemap.htm">SITEMAP</a></li>
+                <li><a href="credits.htm">CREDITS</a></li>
+    
+            </ul>
+        </div>
+    <ol class="welcome">
+        <li><a href="https://twitter.com/usaswimming/status/977260581941104641">SWIMMING DOG</a></li>
+        <li><a href="https://leverageedu.com/blog/career-in-fashion-designing/">FASHION LOGO</a></li>
+        <li><a href="https://www.kbmanage.com/concept/logistics-and-supply-chain-management">SUPPLY CHAIN</a></li>
+        <li><a href="https://bigbelly.com/">BIGBELLY LOGO</a></li>
+        <li><a href="https://sloanreview.mit.edu/article/defining-true-sustainability/">SUSTAINABILITY</a></li>
+        <li><a href="https://www.starbucks.com/">STARBUCKS GRAPHIC</a></li>
+        <li><a href="http://www.bgood.com/">BGOOD LOGO</a></li>
+        <li><a href="https://www.sweetmoment.nyc/">SWEET MOMENT LOGO</a></li>
+        <li><a href="https://www.thunderbun.com/">THUNDERBUN LOGO</a></li>
+        <li><a href="https://spoonuniversity.com/cities/new-york">SPOONU LOGO</a></li>
+    </ol>
+<p class="welcome">ALL OTHER PHOTOS ORIGINAL IF NOT LISTED</p>
+    <div>
+      <h2 id="msg">This text will move</h2>
+    </div>
+  </body>
+</html>

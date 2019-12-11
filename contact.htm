@@ -1,46 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="navbar.css" type="text/css">
+    <style type="text/css">
+        #contact {
+            margin-right: auto;
+            margin-left: auto;
+            padding-left: 400px;
+            padding-right: 400px;
+
+        }
+
+        body {
+            background-color: #F2D5DF;
+        }
+
+        .form1 {
+            padding-left: 470px;
+            padding-right: 470px;
+            margin-left: auto;
+            margin-right: auto;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: navy;
+
+        }
+    #cool{
+        padding-left: 470px;
+            padding-right: 470px;
+            margin-left: auto;
+            margin-right: auto;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: navy;
+    }
+    </style>
+    <script type="text/javascript">
+        function change() {
+            var x = document.getElementById("divide");
+            var y = document.getElementById("pizza");
+            if (x.innerHTML === "") {
+                x.innerHTML = "YUCK!";
+                //changing style of element in response to choice//
+                y.style.color = "red";
+            } else {
+                x.innerHTML = "";
+            }
+        }
+        function myFunction() {
+            var x = document.getElementById("pizza");
+            if (x.innerHTML === "Which flavor is better?") {
+                //changing text on a page//
+                x.innerHTML = "GOOD CHOICE";
+            } else {
+                x.innerHTML = "Which flavor is better?";
+            }
+        }
+    </script>
+
+
 </head>
+
 <body>
-        <div class="nav-bar">
-                <ul class="icons">
-                        <li><a href="index.htm">WORK</a></li>
-                        <li><a href="lunaxdesigns.htm">LUNAXDESIGNS</a></li>
-                        <li><a href="branding.htm">BRANDING</a></li>
-                        <li><a href="art.htm">ART</a></li>
-                        <li><a href="photojournal.htm">PHOTO JOURNAL</a></li>
-                        <li><a href="allthingsluna.htm">ALL THINGS LUNA</a></li>
-                        <li><a href="contact.htm">CONTACT</a></li>
-                        <li><a href="resume.htm">RESUME</a></li>
-                        <li><a href="sitemap.htm">SITEMAP</a></li>
-                        
-                </ul>
-            </div>
-    <img src="ProjectImages/contact.PNG" alt="CONTACT" text="CONTACT" height="500">
-    <form method="POST" action="">
+    <div class="nav-bar">
+        <ul class="icons">
+            <li> <img src="ProjectImages/LU   NA.PNG" alt="logo" title="logo" height="100"></li>
+            <li><a href="index.htm">WORK</a></li>
+            <li><a href="lunaxdesigns.htm">LUNAXDESIGNS</a></li>
+            <li><a href="branding.htm">BRANDING</a></li>
+            <li><a href="art.htm">ART</a></li>
+            <li><a href="allthingsluna.htm">ALL THINGS LUNA</a></li>
+            <li><a href="contact.htm">CONTACT</a></li>
+            <li><a href="sitemap.htm">SITEMAP</a></li>
+            <li><a href="credits.htm">CREDITS</a></li>
+
+        </ul>
+    </div>
+    <img id="contact" src="ProjectImages/contact.PNG" alt="CONTACT" text="CONTACT" height="500">
+    <form class="form1" method="POST" action="">
         <p>
             Name:
-            <input type="text" name="Name" size="30" maxlength="20" placeholder="Please enter your name"/>
+            <input type="text" name="Name" size="30" maxlength="20" placeholder="Please enter your name" />
         </p>
 
         <p>
             Email:
-            <input type="Email"
-            placeholder="Please enter email">
+            <input type="Email" placeholder="Please enter email">
         </p>
         <p>
             Phone Number:
-        <input type="phone number" name="Phone Number" size="30" maxlength="20" placeholder="Please enter your phone number">
+            <input type="phone number" name="Phone Number" size="30" maxlength="20"
+                placeholder="Please enter your phone number">
         </p>
-        
-    
-        <input type="submit" value="submit"/>
-        <input type="reset" value="clear"/>
-</form>
+
+
+        <input type="submit" value="submit" />
+        <input type="reset" value="clear" />
+    </form>
+    <div id="cool">
+    <p id="pizza">Which Flavor is better?</p>
+
+    <p><button onclick="myFunction()">Chocolate</button></p>
+    <p> or</p>
+    <p><button onclick="change()">Vanilla</button></p>
+
+    <div id="divide"></div>
+    </div>
 </body>
+
 </html>

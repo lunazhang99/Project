@@ -1,75 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="navbar.css" type="text/css">
     <title>Document</title>
+    <style type="text/css">
+        #art {
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: navy;
+            font-size: 60px;
+        }
+
+        body {
+            background-color: #F2D5DF;
+        }
+
+        .welcome {
+            text-align: center;
+            padding-left: 200px;
+            padding-right: 200px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 18px;
+            color: navy;
+        }
+
+        .image {
+            margin-left: auto;
+            margin-left: auto;
+            padding-left: 470px;
+            padding-right: 470px;
+        }
+
+        #myForm {
+            padding-left: 470px;
+            padding-right: 470px;
+            margin-left: auto;
+            margin-right: auto;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: navy;
+
+        }
+
+        #clear {
+            background-color: lightskyblue;
+            color: navy;
+            font-family: Georgia, 'Times New Roman', Times, serif
+        }
+
+        #submit {
+            background-color: lightskyblue;
+            color: navy;
+            font-family: Georgia, 'Times New Roman', Times, serif
+        }
+    </style>
+<script type="text/javascript">
+    //validating form//
+        function validateForm() {
+          var x = document.getElementById("myForm");
+          if (x == "") {
+            alert("Name must be filled out");
+            return false;
+          }
+        }
+        </script>
 </head>
+
 <body>
-        <div class="nav-bar">
-                <ul class="icons">
-                        <li><a href="index.htm">WORK</a></li>
-                        <li><a href="lunaxdesigns.htm">LUNAXDESIGNS</a></li>
-                        <li><a href="branding.htm">BRANDING</a></li>
-                        <li><a href="art.htm">ART</a></li>
-                        <li><a href="photojournal.htm">PHOTO JOURNAL</a></li>
-                        <li><a href="allthingsluna.htm">ALL THINGS LUNA</a></li>
-                        <li><a href="contact.htm">CONTACT</a></li>
-                        <li><a href="resume.htm">RESUME</a></li>
-                        <li><a href="sitemap.htm">SITEMAP</a></li>
-                        
-                </ul>
-            </div>
-    <h1>ART</h1>
-    <p>
-            Welcome to my art page! Making art has always helped me de-stress after a long day at school.  
-            I always keep a sketchbook with me, whether I am at school, home, or on vacation.  
-            My passion for painting began as a child, when my mother enrolled me into a Chinese Brush Painting class. 
-             Pictured below are some of my favorite sketches and paintings!
+    <div class="nav-bar">
+        <ul class="icons">
+            <li> <img src="ProjectImages/LU   NA.PNG" alt="logo" title="logo" height="100"></li>
+            <li><a href="index.htm">WORK</a></li>
+            <li><a href="lunaxdesigns.htm">LUNAXDESIGNS</a></li>
+            <li><a href="branding.htm">BRANDING</a></li>
+            <li><a href="art.htm">ART</a></li>
+            <li><a href="allthingsluna.htm">ALL THINGS LUNA</a></li>
+            <li><a href="contact.htm">CONTACT</a></li>
+            <li><a href="sitemap.htm">SITEMAP</a></li>
+            <li><a href="credits.htm">CREDITS</a></li>
+
+        </ul>
+    </div>
+    <h1 id="art">ART</h1>
+    <p class="welcome">
+        Welcome to my art page! Making art has always helped me de-stress after a long day at school.
+        I always keep a sketchbook with me, whether I am at school, home, or on vacation.
+        My passion for painting began as a child, when my mother enrolled me into a Chinese Brush Painting class.
+        Pictured below are some of my favorite sketches and paintings!
     </p>
 
-    <img src="ProjectImages/selfportrait.jpg" alt="LUNA X SELF" text="Self-Portrait" height="400">
-    <p>Self Portrait</p>
-    <img src="ProjectImages/space.jpg" alt="LUNA X SPACE" text="Outer Space" height="400">
-    <p>Lost in outer space</p>
-    <img src="ProjectImages/rickxmorty.jpg" alt="LUNA X RICK" text="Rick and Morty" height="400">
-    <p>Initial sketch done for the LUNA x Rick and Morty shoes I painted</p>
-    <img src="ProjectImages/pureworld.jpg" alt="Pure World" text="Pure World" height="400" width="400" usemap="#planetmap">
+    <img class="image" src="ProjectImages/selfportrait.jpg" alt="LUNA X SELF" text="Self-Portrait" height="400">
+    <p class="welcome">Self Portrait</p>
+    <img class="image" src="ProjectImages/space.jpg" alt="LUNA X SPACE" text="Outer Space" height="400">
+    <p class="welcome">Lost in outer space</p>
+    <img class="image" src="ProjectImages/rickxmorty.jpg" alt="LUNA X RICK" text="Rick and Morty" height="400">
+    <p class="welcome">Initial sketch done for the LUNA x Rick and Morty shoes I painted</p>
+    <img class="image" src="ProjectImages/pureworld.jpg" alt="Pure World" text="Pure World" height="400" width="400"
+        usemap="#planetmap">
     <map name="planetmap">
-            <area shape="rect" coords="0,0,82,126" href="https://en.wikipedia.org/wiki/J._Cole" alt="J cole">
-            <area shape="circle" coords="90,58,3" href="https://www.nike.com/" alt="Nike">
-           
-    <p>Design sketch for a pair of shoes I am painting </p>
-    <form method="POST" action="">
-     <table>
-        <td colspan="4">Leave me a message about my art!</td>
-          <tr>
-                         <td colspan="1">Name:
-                                Name:
-                                <input type="text" name="Name" size="30" maxlength="20" placeholder="Please enter your name"/>
-                         </td>
-                        </tr>
-                        <tr>
-                        <td colspan="3" id="left">
-                            Email:
-                                <input type="Email" placeholder="Please enter email">
-                             </td>
-                         </tr>
-                        <td colspan="2" id="left">Your comments are welcome:
-                            <br>
-                                 <textarea name="comment" id="comment" rows="5" cols="50"></textarea>
-                        </td>
-                         <td colspan="2" id="button">
-                                    <button type="submit" name="submit" value="submit">
-                                        Done
-                                    </button>
-                                    <button type="reset" id="clear" name="reset" value="reset">
-                                        Clear
-                           </button>
-                      </td>
-                  </tr>
+        <area shape="rect" coords="0,0,82,126" href="https://en.wikipedia.org/wiki/J._Cole" alt="J cole">
+        <area shape="circle" coords="90,58,3" href="https://www.nike.com/" alt="Nike">
+
+        <p class="welcome">Design sketch for a pair of shoes I am painting </p>
+        <form id="myForm" onsubmit="return validateForm()" method="POST" action="">
+            <table>
+                <td colspan="4">Leave me a message about my art!</td>
+                <tr>
+                    <td colspan="1">Name:
+
+                        <input type="text" name="Name" size="30" maxlength="20" placeholder="Please enter your name" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" id="left">
+                        Email:
+                        <input type="Email" placeholder="Please enter email">
+                    </td>
+                </tr>
+                <td colspan="2" id="left">Your comments are welcome:
+                    <br>
+                    <textarea name="comment" id="comment" rows="5" cols="50"></textarea>
+                </td>
+                <td colspan="2" id="button">
+                    <button type="submit" id="submit" name="submit" value="submit">
+                        Done
+                    </button>
+                    <button type="reset" id="clear" name="reset" value="reset">
+                        Clear
+                    </button>
+                </td>
+                </tr>
             </table>
-         </form>
+        </form>
 </body>
+
 </html>
